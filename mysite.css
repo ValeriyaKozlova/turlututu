@@ -1,0 +1,173 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    margin: 0;
+    display: inline-block;
+}
+li {
+    display: inline;
+    padding: 5px 10px;
+    margin-left: 0px;
+    float: left;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.blue,
+.list
+{
+    background-color: #1e93cc;
+    overflow: auto;
+    color: white;
+    margin-top: -4px;
+}
+
+
+.btn-orange,
+.btn-darkblue {
+    background-color: #e99002;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    height: 30%;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-darkblue {
+    background-color: #165882;
+}
+
+.innovate {
+    color: darkgrey;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    padding: 30px 0;
+}
+
+section.blue,
+section.projects {
+    background-color: #1e93cc;
+    color: white;
+}
+
+section.blue .man {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -115px;
+}
+
+section.blue .col-2,
+section.flex .col-2 {
+    text-align: center;
+    z-index: 1;
+}
+
+section.flex .col-2 a {
+    margin: 0 20px;
+}
+.container,
+.container-fluid,
+.container-header {
+    position: relative;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 1200px;
+    grid-row-gap: 15px;
+}
+
+.container .col-2,
+.container-fluid .col-2,
+.container-header .col-2 {
+    grid-column: span 2;
+}
+
+.container-fluid {
+    max-width: none;
+}
+.container-fluid > * {
+    padding: 0 15px;
+}
+
+section.flex {
+    background-color: #EFEFEF;
+}
+
+.container-header {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container-header .col-3 {
+    grid-column: span 3;
+}
+
+header {
+    padding-top: 15px;
+}
+
+header .login a,
+header .login span,
+header .login img  {
+    display: inline-block;
+    vertical-align: middle;
+}
+header .login img {
+    height: 18px;
+    vertical-align: middle;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle
+}
+
+.buttons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header,
+footer {
+    background-color:#333333;
+    color: #fff;
+}
+footer .navFooter {
+    width: 100%;
+    padding-left: 0px;
+    font-size: 14px;
+}
+footer .navFooter li {
+border-right: 2px dotted gray;
+}
+
+footer .copyright {
+    text-align: right;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.chat {
+    position: fixed;
+    z-index: 999;
+    bottom:0px;
+    right: 0px;
+}
+.chat img {
+    width: 50px;
+    height: 50px;
+}
