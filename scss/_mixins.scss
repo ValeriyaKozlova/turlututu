@@ -1,0 +1,26 @@
+@mixin buttons {
+    background-color: #e99002;
+    border: 2px solid $color;
+    color: $color;
+    border-radius: 8px;
+    height: 30%;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+@mixin container {
+    position: relative;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 1200px;
+    grid-row-gap: 15px;
+  }
+  
+  @mixin section {
+    background-color: #1e93cc;
+    color: $color;
+  }
+  

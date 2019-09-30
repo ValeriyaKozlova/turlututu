@@ -1,0 +1,156 @@
+@import "variables";
+@import "mixins";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+h2 {
+    text-align: center;
+}
+nav {
+    margin: 0;
+    display: inline-block;
+}
+li {
+    list-style-type: none;
+    padding: 5px 10px;
+    margin-left: 0px;
+    float: left;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: $color;
+}
+.blue
+{
+    background-color: #1e93cc;
+    overflow: auto;
+    color: $color;
+    margin-top: -4px;
+}
+
+.btn-orange,
+.btn-darkblue {
+    @include buttons;
+}
+.btn-darkblue {
+    background-color: #165882;
+}
+
+.innovate {
+    color: darkgrey;
+}
+
+section {
+    padding: 30px 0;
+}
+
+section.blue,
+section.projects {
+    @include section;
+}
+
+section.blue {
+    .man {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -115px;
+    }
+}
+
+section.blue .col-2,
+section.flex .col-2 {
+    text-align: center;
+    z-index: 1;
+}
+
+section.flex .col-2 a {
+    margin: 0 20px;
+}
+.container,
+.container-fluid,
+.container-header {
+    @include container;
+}
+
+.container .col-2,
+.container-fluid .col-2,
+.container-header .col-2 {
+    grid-column: span 2;
+}
+
+.container-fluid > * {
+    padding: 0 15px;
+    max-width: none;
+}
+
+section.flex {
+    background-color: #EFEFEF;
+}
+
+.container-header {
+    grid-template-columns: repeat(4, 1fr);
+    .col-3 {
+        grid-column: span 3;
+    }
+}
+
+header {
+    padding-top: 15px;
+    .login a,
+    .login span,
+    .login img  {
+         display: inline-block;
+         vertical-align: middle;
+         height: 18px;
+      }
+}
+
+header {
+    ul {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle
+     } 
+}
+
+.buttons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header, %header {
+    background-color:#333333;
+    color: #fff;
+}
+footer {
+    @extend %header;
+    .navFooter {
+        width: 100%;
+        padding-left: 0px;
+        font-size: 14px;
+        li {
+            border-right: 2px dotted gray;
+            }
+    }
+    .copyright {
+        text-align: right;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}
+
+.chat {
+    position: fixed;
+    z-index: 999;
+    bottom:0px;
+    right: 0px;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
